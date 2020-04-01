@@ -16,10 +16,10 @@ public class DriverFactory {
         switch (browser){
             case "chrome":
                 WebDriverManager.chromedriver().version("79").setup();
-                ChromeOptions option = new ChromeOptions();
-                option.setHeadless(true);
-            return new ChromeDriver(option);
-
+//                ChromeOptions option = new ChromeOptions();
+//                option.setHeadless(true);
+//            return new ChromeDriver(option);
+return new ChromeDriver();
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
